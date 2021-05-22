@@ -6,6 +6,7 @@ body {
   background-color: rgb(228, 225, 222);
   padding: 5px;
   margin: 5px;
+  text-align: center;
 }
 
 li {
@@ -28,6 +29,7 @@ li {
 }
 
 .right {
+  width: 100%;
   color: #222;
   background: #ccc;
   text-align: center;
