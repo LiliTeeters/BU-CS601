@@ -1,83 +1,90 @@
 
 
-     body {
-        background-color:rgb(255, 255, 255) ;
-        margin: 0;
-        padding:0;
-        font-size: 18px;
-        font-family: 'Times New Roman', Times, serif;
-      }
+ @media print {
+   body {-webkit-print-color-adjust:exact;}
+ }
+ @page {
+     size:A4 landscape;
+     margin-left: 4px;
+     margin-right: 4px;
+     margin-top: 4px;
+     margin-bottom: 4px;
+     margin: 5;
+     -webkit-print-color-adjust: exact;
+ }
+    
       
       h1{
         font-family:Arial, Helvetica, sans-serif;
-        font-size: 250%;
+        font-size: 150%;
         text-shadow: none;
       }
       
       p {
-        font-size: 130%;
+        font-size: 90%;
         font-weight: bold;
+        font-family:Arial, Helvetica, sans-serif;
       }
       
       a{
         color: black;
-        font-size: 110%;
+        font-size: 90%;
         text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
       }
       
       a:hover {
-        background-color: none;
+        display: none;
       }
-      
-      
       
       
       #nav {
-        background-color: #ffffff;
-        width:fit-content;
-        padding: 0;
+        display: inline;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 90%;
+        padding: 1;
         margin: 0;
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        box-shadow: none;
+        color: #222;
       }
       
       #nav a {
-        display: inline-block;
-        color: rgb(12, 13, 14);
-        text-align: center;
-        font-size: 150%;
+        display: inline
       }
       
       #nav a:hover{
-        background-color: rgb(254, 254, 254);
+        display: none;
       }
-      
       
       
       li {
         display: inline;
         padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 90%;
       }
       
       .parent {
-        display: flex;
+        display:contents;
         height: 50px;;
         font-family: Arial, Helvetica, sans-serif;
       }
       
       .left {
-        width: 0%;
-        padding: none;
-        min-height: 300px;
-        align-items: center;
+        width: 100%;
+        padding: 0;
+        align-items: inherit;
+        background-image:initial;
       }
-      
       
       .right {
-        width: 90%;
+        width: 100%;
         color: #222;
-        text-align: left;
-        padding-left: 0x;
+        text-align:inherit;
+        padding-left: 0;
         padding-right: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
       }
+
+     

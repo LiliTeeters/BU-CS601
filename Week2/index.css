@@ -24,8 +24,6 @@ a:hover {
 }
 
 
-
-
 #nav {
   background-color: #d38e8e;
   width: auto;
@@ -46,7 +44,6 @@ a:hover {
 #nav a:hover{
   background-color: rgb(245, 220, 236);
 }
-
 
 
 li {
@@ -76,21 +73,4 @@ li {
   padding-right: 50px;
 }
 
-@media screen and (max-width: 600px){
-  
-  .parent {
-    flex-direction: column-reverse;  
-  }
-  
-  .left {
-    width: auto;
-    min-height: 300px;
-  }
-  
-  .right {
-    background: #7e4747;
-  }
 
-
-  
-}
