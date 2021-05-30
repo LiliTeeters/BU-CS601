@@ -1,0 +1,11 @@
+body {
+    background-image: linear-gradient(#d38e8e, #7e4747);
+  }
+  
+  h1{
+    font-family:fantasy;
+    font-size: 250%;
+    text-shadow: 2px 2px 7px rgb(73, 71, 71);
+    align-items: center;
+  }
+  
