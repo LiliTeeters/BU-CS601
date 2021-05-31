@@ -19,13 +19,23 @@ p{
   text-align: center;
 }
 
+div {
+  display: flex;
+  justify-content: center;
+}
 img {
-  border-radius: 50%;
+  border-radius: 60%;
+  align-items: center;
+  width: 50%;
+  
+ 
+  
 }
 
 #yes {
   width: 50px;
   cursor: pointer;
+  align-items: center;
   
   
 }
@@ -33,6 +43,6 @@ img {
 #no {
   width: 50px;
   cursor: pointer;
-  display: center;
+  align-items: right;
 
 }
