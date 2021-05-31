@@ -23,26 +23,21 @@ div {
   display: flex;
   justify-content: center;
 }
+
 img {
   border-radius: 60%;
   align-items: center;
   width: 50%;
-  
- 
-  
 }
 
 #yes {
   width: 50px;
   cursor: pointer;
-  align-items: center;
-  
-  
+  align-items: center;  
 }
 
 #no {
   width: 50px;
   cursor: pointer;
-  align-items: right;
-
+  align-items: center;
 }
