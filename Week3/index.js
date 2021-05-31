@@ -32,4 +32,4 @@ const userNumberInput = () => {
 }
 
 welcomeScreen();
-//userNumberInput();
+userNumberInput();

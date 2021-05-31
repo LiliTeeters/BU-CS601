@@ -19,12 +19,8 @@ p{
   text-align: center;
 }
 
-div {
-  align-items: center;
-}
-
 img {
-  align-items: center;
+  border-radius: 50%;
 }
 
 #yes {
@@ -37,5 +33,6 @@ img {
 #no {
   width: 50px;
   cursor: pointer;
+  display: center;
 
 }

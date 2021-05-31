@@ -13,8 +13,8 @@
         <p>Would you like to help me test my prompts?</p>
 
         <div class = "controls">
-            <img src="thumbsUp.jpg" id="yes">
-            <img src="thumbDown.jpg" id='no'>
+            <img src="thumbsUp.jpg" id="yes" alt="link">
+            <img src="thumbDown.jpg" id='no' alt="link">
         </div>
 
         <script>
@@ -23,6 +23,10 @@
 
             yesChoice.onclick = function() {
                 location.href= "testPage.html";
+            }
+
+            noChoice.onclick = function() {
+                location.href = "turnedDown.html";
             }
 
         </script>
