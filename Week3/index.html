@@ -8,10 +8,24 @@
     </head>
     <body>
         <H1>Welcome!</H1>
-        <script src="index.js"></script>
-          
-       
-        
-           
+        <br>
+
+        <p>Would you like to help me test my prompts?</p>
+
+        <div class = "controls">
+            <img src="thumbsUp.jpg" id="yes">
+            <img src="thumbDown.jpg" id='no'>
+        </div>
+
+        <script>
+            var yesChoice = document.getElementById("yes");
+            var noChoice = document.getElementById("no");
+
+            yesChoice.onclick = function() {
+                location.href= "testPage.html";
+            }
+
+        </script>
+   
     </body>
 </html>

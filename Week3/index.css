@@ -1,6 +1,9 @@
 body {
-    background: linear-gradient(#0ac099, #b6a338);
-    background-size: cover;
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
   }
   
 h1{
@@ -9,4 +12,30 @@ h1{
   text-shadow: 2px 2px 7px rgb(73, 71, 71);
   text-align: center;
 }
+
+p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 150%;
+  text-align: center;
+}
+
+div {
+  align-items: center;
+}
+
+img {
+  align-items: center;
+}
+
+#yes {
+  width: 50px;
+  cursor: pointer;
   
+  
+}
+
+#no {
+  width: 50px;
+  cursor: pointer;
+
+}
