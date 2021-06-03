@@ -1,0 +1,14 @@
+body {
+    background: linear-gradient(to left, #f3f02f, #8ecdff, #f3f02f);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+h1{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 250%;
+  text-shadow: 2px 2px 7px rgb(73, 71, 71);
+  text-align: center;
+}
