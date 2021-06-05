@@ -3,62 +3,61 @@
     <head>
         <title>CS601_HW4_Teeters</title>
 
-        <!--css stylesheet-->
+        
         <link rel="stylesheet" href="index.css" >
+        <script src="index.js"></script>
     </head>
     <body>
         <H1>Welcome to CS601 Assigment Four!</H1>
         <br>
 
-        <form name ="firstForm" action="http://bucs601.com/submit.php" method="post">
-            <p>
-                Enter Your First Name:
-                <input type="text" name="firstName" id="firstName">
-            </p>
-            <p>
-                Enter Your Last Name:
-                <input type="text" name="lastName" id="lastName">
-            </p>
-            <p>
-                Enter Your Facilitator's Name:
-                <input type="text" name="facilitator" id="facilitator">
-            </p>
-            <br>
+        <form name ="firstForm" action="https://bucs601.com/submit.php" method="post" onsubmit="return validateForm()">
+        
+            Enter Your First Name:
+                <input type="text" name="firstName" id="firstName" required>
+                <br>
+                <br>
+           
+            Enter Your Last Name:
+                <input type="text" name="lastName" id="lastName" required>
+                <br>
+                <br>
 
-            <p>
-                Are you liking the page so far?
+            Enter Your Facilitator's Name:
+                <input type="text" name="facilitator" id="facilitator" required>
+                <br>
+                <br>
+
+           
+            Are you liking the page so far?
                 <input type="radio" name="yes/no"
                 value="question" checked>Yes 
             
                 <input type="radio" name="yes/no"
                 value="question" checked>No 
-            </p>
-            <br>
+                <br>
+                <br>
+                <br>
 
-            <p>
-                Check all that apply:
+           
+            Check all that apply: What is the best way to reach you?
                 <br>
-                What is the best way to reach you?
-                <br>
-                <input type="checkbox" name="cbContact1"
+                <input type="checkbox" name="contact1"
                 value="E-mail">E-mail <br/>
-                <input type="checkbox" name="cbContact2"
+                <input type="checkbox" name="contact2"
                 value="textmsg">Text Message <br/>
-                <input type="checkbox" name="cbContact3"
+                <input type="checkbox" name="contact3"
                 value="phone">Phone Call <br/>
-            </p>
-            <br>
+            
+                <br>
+                <br>
+            
+                <br>
+                <input type="submit" name="submitButton" value="Submit">
 
-            <p>Share a fun fact about yourself:</p>
-            <p><textarea rows="5" cols="50" name="taComments"></textarea> </p>
-
-            <input type="submit" name="submitButton" value="Submit">
-
-
-
-
-        
         </form>
+       
+        
           
            
     </body>
