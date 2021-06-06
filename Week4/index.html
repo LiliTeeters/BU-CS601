@@ -11,35 +11,31 @@
         <H1>Welcome to CS601 Assigment Four!</H1>
         <br>
 
-        <form name ="firstForm" action="https://bucs601.com/submit.php" method="post" onsubmit="return validateForm()">
+        <form name ="firstForm" action="https://bucs601.com/submit.php" method="post" onsubmit="validateForm()">
+            <div>
         
-            Enter Your First Name:
-                <input type="text" name="firstName" id="firstName" required>
-                <br>
-                <br>
-           
-            Enter Your Last Name:
+            Enter Your First Name (required):
+                <input type="text" name="firstName" id="firstName"  required>
+                <br><br>
+            </div>
+
+
+            Enter Your Last Name (required):
                 <input type="text" name="lastName" id="lastName" required>
-                <br>
-                <br>
+                <br><br>
 
-            Enter Your Facilitator's Name:
+            Enter Your Facilitator's Name (required):
                 <input type="text" name="facilitator" id="facilitator" required>
-                <br>
-                <br>
+                <br><br>
 
-           
             Are you liking the page so far?
                 <input type="radio" name="yes/no"
                 value="question" checked>Yes 
             
                 <input type="radio" name="yes/no"
                 value="question" checked>No 
-                <br>
-                <br>
-                <br>
-
-           
+                <br><br><br>
+          
             Check all that apply: What is the best way to reach you?
                 <br>
                 <input type="checkbox" name="contact1"
@@ -48,17 +44,11 @@
                 value="textmsg">Text Message <br/>
                 <input type="checkbox" name="contact3"
                 value="phone">Phone Call <br/>
-            
-                <br>
-                <br>
-            
-                <br>
+                <br><br><br>
+
                 <input type="submit" name="submitButton" value="Submit">
 
         </form>
-       
-        
-          
-           
+     
     </body>
 </html>

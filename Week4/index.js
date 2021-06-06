@@ -1,23 +1,29 @@
 
-function validateForm() {
-    var firstName = document.forms["firstForm"]["firstName"].value;
-    var lastName = document.forms["firstForm"]["lastname"].value;
-    var facilitatorName = document.forms["firstForm"]["facilitator"].value;
+function validateForm(e) {
+    const firstName = document.getElementById("firstName")
+    const lastName = document.getElementById("lastName")
+    const facilitatorName = document.getElementById("facilitator")
     
-    if ((firstName == '') || (firstName.length <=2)) {
+    
+    if (firstName.value.length <=2 || firstName.value == null) {
+        e.preventDefault()
         alert("Name must be filled out and have two or more characters");
+        firstName.focus()
         return false
 
-    }else if ((lastName =='') || (lastName.length <= 2)) {
+    }if (lastName.value.length <= 2 || lastName.value == null) {
+        e.preventDefault()
         alert("Last Name must be filled out and have two or more characters");
+        lastName.focus()
         return false
 
-    }else if ((facilitatorName == '') || (facilitatorName != "Laura") || (facilitatorName != "Fazil") || (facilitatorName != "Harsh")){
-        alert("Please enter a valid facilitator name")
+    } if ((facilitatorName.value.length <=2) || facilitatorName.value == null || (facilitatorName.value != "Laura") || (facilitatorName.value != "Fazil") || (facilitatorName.value != "Harsh")){
+        e.preventDefault()
+        alert("Please enter a valid facilitator name");
+        facilitatorName.focus()
         return false
-        
-    }else{
-        return true
+
     }
+    return true
 
 }
