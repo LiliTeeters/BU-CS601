@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to left, #f3f02f, #eba576, #f3f02f);
+    background: radial-gradient(circle at 100%, #9c27b0, #11b8e2 50%, #eee 65%, #11b8e2 65%);
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -11,4 +11,12 @@ h1{
   font-size: 250%;
   text-shadow: 2px 2px 7px rgb(73, 71, 71);
   text-align: center;
+}
+
+fieldset {
+  width: 40%;
+}
+
+input{
+  font-size: larger;
 }

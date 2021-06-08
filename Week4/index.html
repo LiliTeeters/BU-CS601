@@ -2,53 +2,56 @@
 <html lang="en">
     <head>
         <title>CS601_HW4_Teeters</title>
-
-        
         <link rel="stylesheet" href="index.css" >
-        <script src="index.js"></script>
+        
     </head>
     <body>
+        <script src="index.js"></script>
         <H1>Welcome to CS601 Assigment Four!</H1>
         <br>
 
-        <form name ="firstForm" action="https://bucs601.com/submit.php" method="post" novalidate onsubmit="validateForm()">
-            <div>
-        
-            Enter Your First Name (required):
-                <input type="text" name="firstName" id="firstName"  required>
-                <br><br>
-            </div>
-
-
-            Enter Your Last Name (required):
-                <input type="text" name="lastName" id="lastName" required>
-                <br><br>
-
-            Enter Your Facilitator's Name (required):
-                <input type="text" name="facilitator" id="facilitator" required>
-                <br><br>
-
-            Are you liking the page so far?
-                <input type="radio" name="yes/no"
-                value="question" checked>Yes 
+        <form name ="firstForm" action="https://bucs601.com/submit.php" method="post"   novalidate onsubmit="return validateForm()">
             
-                <input type="radio" name="yes/no"
-                value="question" checked>No 
-                <br><br><br>
-          
-            Check all that apply: What is the best way to reach you?
-                <br>
-                <input type="checkbox" name="contact1"
-                value="E-mail">E-mail <br/>
-                <input type="checkbox" name="contact2"
-                value="textmsg">Text Message <br/>
-                <input type="checkbox" name="contact3"
-                value="phone">Phone Call <br/>
-                <br><br><br>
+            <fieldset>
+                <legend>Required Information</legend> <br>
+                
+                 Your First Name:
+                    <input type="text" name="firstName" id="firstName"  required>
+                    <br><br>
 
-                <input type="submit" name="submitButton" value="Submit">
+                 Your Last Name:
+                    <input type="text" name="lastName" id="lastName" required>
+                    <br><br>
+
+                 Your Facilitator's Name:
+                    <input type="text" name="facilitator" id="facilitator" required>
+                    <br><br>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>Optional</legend>
+                <br>
+                    Are you liking the page so far?
+                    <input type="radio" name="yes/no" value="question" checked>Yes 
+            
+                    <input type="radio" name="yes/no" value="question" checked>No 
+                    <br><br><br>
+          
+                    Check all that apply: What is the best way to reach you?
+                    <br>
+                    <input type="checkbox" name="contact1" value="E-mail">E-mail <br/>
+                    <input type="checkbox" name="contact2"  value="textmsg">Text Message <br/>
+                    <input type="checkbox" name="contact3" value="phone">Phone Call <br/>
+                    <br>
+            </fieldset>
+
+            <br><br>
+                
+            <input type="submit" name="submitButton" value="Submit">
 
         </form>
-     
+        
     </body>
 </html>
