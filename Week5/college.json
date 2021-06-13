@@ -1,0 +1,22 @@
+{
+    "my_education": [
+        {
+            "school": "University of Phoenix",
+            "major": "General Studies",
+            "type": "AA",
+            "year conferred": "2011"
+        },
+        {
+            "school": "University of North Carolina at Wilmington",
+            "major": "Therapeutic Recreation",
+            "type": "BA",
+            "year conferred": "2014"
+        },
+        {
+            "school": "Boston University Metropolitan College",
+            "major": "Software Development",
+            "type": "MS",
+            "year conferred": "2022"
+        }
+    ]
+}
