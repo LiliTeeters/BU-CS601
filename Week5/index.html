@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>CS601_HW5_Teeters</title>
-        <link rel="stylesheet" href="index.css" >
-        
-    </head>
-    <body>
-        <script src="index.js"></script>
-        <H1>Welcome to CS601 Assigment Five!</H1>
 
-        <button id="button">Education</button>
+<head>
+    <title>CS601_HW5_Teeters</title>
+    <link rel="stylesheet" href="index.css">
 
-        
-    </body>
+</head>
+
+<body>
+    <H1>Welcome to CS601 Assigment Five!</H1>
+
+
+    <br><br>
+    <table id="myTable">
+        <tr>
+            <th>School</th>
+            <th>Program</th>
+            <th>Type</th>
+            <th>Year Conferred</th>
+        </tr>
+    </table>
+    <br>
+
+    <button id="button">My Education</button>
+
+    <script>
+        (function () {
+            let httpRequest;
+            document.getElementById("button").onclick = function () {
+                makeRequest("https://api.jsonbin.io/b/60c6aa8fb274176a77e71749")
+            };
+
+
+            function makeRequest(url) {
+                httpRequest = new XMLHttpRequest();
+                if (!httpRequest) {
+                    alert("error")
+                    return false;
+                }
+
+                httpRequest.onreadystatechange = alertContents;
+                httpRequest.open('GET', url);
+                httpRequest.send()
+            }
+
+            function alertContents() {
+                if (httpRequest.readyState === XMLHttpRequest.DONE) {
+                    if (httpRequest.status === 200) {
+                        alert(httpRequest.responseText)
+                    } else {
+                        alert('problem')
+                    }
+                }
+            }
+
+
+        }
+        )()
+
+    </script>
+
+
+</body>
+
 </html>
