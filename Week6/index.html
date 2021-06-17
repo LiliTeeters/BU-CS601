@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CS601_HW6_Teeters</title>
+    <link rel="stylesheet" href="index.css">
+   
+  
+</head>
+
+<body>
+    <div id = "app" >
+        <H1>{{ courseName}}</H1>
+        <div>
+            <optional-image></optional-image>
+        </div>
+
+    </div>
+    <template id="firstImage" >
+        <img :src= "currentImage" 
+        height=" 250px"
+        width="auto"
+        @mouseover = "changeImageWhen('over')"
+        @mouseout = "changeImageWhen('out')">
+    </template>
+   
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+        var FirstImage = {
+            template: '#firstImage',
+            data:function() {
+                return {
+                    images: {
+                        over: 'fourthOfJuly.jpg',
+                        out: 'theWave.jpg'
+                },
+                    currentImage: 'theWave.jpg'
+            }
+        },
+
+        created: function () {
+            this.currentImage = this.images.out
+        },
+        methods: {
+            changeImageWhen: function(state) {
+                this.currentImage = this.images[state]
+            }
+        }
+    }
+
+
+
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                courseName:'CS601: Assigment Six'
+            },
+            components: {
+                'optional-image': FirstImage
+            }
+               
+                
+            
+        })
+    </script>
+
+</body>
+
+</html>
