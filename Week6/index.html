@@ -10,19 +10,53 @@
 
 <body>
     <div id = "app" >
-        <H1>{{ courseName}}</H1>
-        <div>
+        <H1>{{courseName}}</H1>
+        <br>
+        
+        <div id = "images">
             <optional-image></optional-image>
+            
+            <second-image></second-image>
+        
+            <third-image></third-image>
         </div>
-
     </div>
-    <template id="firstImage" >
-        <img :src= "currentImage" 
-        height=" 250px"
-        width="auto"
-        @mouseover = "changeImageWhen('over')"
-        @mouseout = "changeImageWhen('out')">
-    </template>
+
+
+    
+        <template id="firstImage">
+                    <img :src= "currentImage" 
+                        height=" auto"
+                        width="450px"
+                        style="object-position: center;"
+                        @mouseover = "changeImageWhen('over')"
+                        @mouseout = "changeImageWhen('out')"
+                    >
+        </template>
+    
+    <br>
+
+   
+        <template id="secondImage">
+                <img :src= "currentImage" 
+                height=" auto"
+                width="450px"
+                @mouseover = "changeImageWhen('over')"
+                @mouseout = "changeImageWhen('out')"
+            >
+        </template>
+
+        <template id="thirdImage">
+                <img :src= "currentImage" 
+                height=" 450"
+                width="auto"
+                @mouseover = "changeImageWhen('over')"
+                @mouseout = "changeImageWhen('out')"
+            >
+        </template>
+ 
+
+
    
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script>
@@ -32,7 +66,8 @@
                 return {
                     images: {
                         over: 'fourthOfJuly.jpg',
-                        out: 'theWave.jpg'
+                        out: 'theWave.jpg',
+                       
                 },
                     currentImage: 'theWave.jpg'
             }
@@ -48,7 +83,51 @@
         }
     }
 
+    var SecondImage = {
+            template: '#secondImage',
+            data:function() {
+                return {
+                    images: {
+                        over: 'sedona.jpg',
+                        out: 'sedonaOaks.jpg',
+                },
+                    currentImage: 'sedona.jpg'
+            }
+        },
 
+        created: function () {
+            this.currentImage = this.images.out
+        },
+        methods: {
+            changeImageWhen: function(state) {
+                this.currentImage = this.images[state]
+            }
+        }
+    }
+
+    var ThirdImage = {
+            template: '#thirdImage',
+            data:function() {
+                return {
+                    images: {
+                        over: 'lake.jpg',
+                        out: 'oakley.jpg',
+                },
+                    currentImage: 'oakley.jpg'
+            }
+        },
+
+        created: function () {
+            this.currentImage = this.images.out
+        },
+        methods: {
+            changeImageWhen: function(state) {
+                this.currentImage = this.images[state]
+            }
+        }
+    }
+
+    
 
 
         var app = new Vue({
@@ -57,14 +136,14 @@
                 courseName:'CS601: Assigment Six'
             },
             components: {
-                'optional-image': FirstImage
-            }
-               
-                
-            
+                'optional-image': FirstImage,
+                'second-image': SecondImage,
+                'third-image':ThirdImage
+            }     
         })
     </script>
 
-</body>
+
+    </body>
 
 </html>
