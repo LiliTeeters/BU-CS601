@@ -14,31 +14,31 @@
         <br>
         
         <div id = "images">
-            <optional-image></optional-image>
+            <first-image></first-image><br>
             
-            <second-image></second-image>
+            <second-image></second-image><br>
         
-            <third-image></third-image>
+            <third-image></third-image><br>
+
+            <fourth-image></fourth-image>
         </div>
     </div>
 
 
     
         <template id="firstImage">
-                    <img :src= "currentImage" 
-                        height=" auto"
-                        width="450px"
-                        style="object-position: center;"
-                        @mouseover = "changeImageWhen('over')"
-                        @mouseout = "changeImageWhen('out')"
-                    >
+            <img :src= "currentImage" 
+                height=" auto"
+                width="350px"
+                style="object-position: center;"
+                @mouseover = "changeImageWhen('over')"
+                @mouseout = "changeImageWhen('out')"
+            >
         </template>
-    
-    <br>
 
    
         <template id="secondImage">
-                <img :src= "currentImage" 
+            <img :src= "currentImage" 
                 height=" auto"
                 width="450px"
                 @mouseover = "changeImageWhen('over')"
@@ -47,9 +47,18 @@
         </template>
 
         <template id="thirdImage">
-                <img :src= "currentImage" 
-                height=" 450"
-                width="auto"
+            <img :src= "currentImage" 
+                height=" auto"
+                width="550"
+                @mouseover = "changeImageWhen('over')"
+                @mouseout = "changeImageWhen('out')"
+            >
+        </template>
+
+        <template id="fourthImage">
+            <img :src= "currentImage" 
+                height=" auto"
+                width="650"
                 @mouseover = "changeImageWhen('over')"
                 @mouseout = "changeImageWhen('out')"
             >
@@ -127,6 +136,27 @@
         }
     }
 
+    var FourthImage = {
+            template: '#fourthImage',
+            data:function() {
+                return {
+                    images: {
+                        over: 'desert.jpg',
+                        out: 'flowers.jpg',
+                },
+                    currentImage: 'flowers.jpg'
+            }
+        },
+
+        created: function () {
+            this.currentImage = this.images.out
+        },
+        methods: {
+            changeImageWhen: function(state) {
+                this.currentImage = this.images[state]
+            }
+        }
+    }
     
 
 
@@ -136,9 +166,10 @@
                 courseName:'CS601: Assigment Six'
             },
             components: {
-                'optional-image': FirstImage,
+                'first-image': FirstImage,
                 'second-image': SecondImage,
-                'third-image':ThirdImage
+                'third-image':ThirdImage,
+                'fourth-image': FourthImage
             }     
         })
     </script>
