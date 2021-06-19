@@ -22,6 +22,7 @@ h1{
   display:grid;
 }
 
+/*Could not figure out how to transition images*/
 :hover{
   transition: opacity .5s;
 }
