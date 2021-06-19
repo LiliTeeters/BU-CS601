@@ -1,77 +1,88 @@
+/** {
+  border: 1px solid #f00 !important;
+}*/
+
 body {
-    background-image: linear-gradient(#d38e8e, #7e4747);
-  }
-  
-  h1{
-    font-family:fantasy;
-    font-size: 250%;
-    text-shadow: 2px 2px 7px rgb(73, 71, 71);
-  }
-  
-  p {
-    font-size: 130%;
-    font-weight: bold;
-  }
-  
-  a{
-    color: black;
-    font-size: 110%;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    background-color: rgb(245, 220, 236);
-  }
+  background: linear-gradient(301.28deg, #630000 0%, #000000 100%), linear-gradient(121.28deg, #207A00 0%, #950000 100%), linear-gradient(238.72deg, #FFB800 0%, #000000 100%), linear-gradient(238.72deg, #00D1FF 0%, #A80000 100%), linear-gradient(58.72deg, #B80000 0%, #1B00C2 100%), linear-gradient(125.95deg, #00E0FF 10.95%, #87009D 100%), linear-gradient(263.7deg, #B60000 3.43%, #B100A0 96.57%), linear-gradient(320.54deg, #800000 0%, #00C2FF 72.37%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
+background-blend-mode: overlay, color-dodge, difference, lighten, difference, color-dodge, difference, difference, normal;
   
   
-  #nav {
-    background-color: #d38e8e;
-    width: auto;
-    padding: 5px;
-    margin: 50px;
-    text-align: center;
-    font-family: 'Courier New', Courier;
-    box-shadow: inset 0 0 10px #7e4747;
-  }
+  opacity: 0;
+
+  transition: opacity 5s;
+
   
-  #nav a {
-    display: inline-block;
-    color: rgb(12, 13, 14);
-    text-align: center;
-    font-size: 150%;
-  }
+}
+
+h1 {
+  font-family: fantasy;
+  color: aliceblue;
+  font-size: 250%;
+  text-shadow: 2px 2px 7px rgb(73, 71, 71);
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  font-size: 130%;
+  font-weight: bold;
+  color: rgb(202, 216, 228);
+  text-align: center;
+}
+
+a {
+  color: aliceblue;
+  font-size: 110%;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.nav {
+  background-color: #000000;
+  padding: 5px;
+  margin: 50px;
+  font-family: "Courier New", Courier;
+  box-shadow: inset 0 0 10px #9b9a9a;
+  text-align: center;
+  overflow: auto;
   
-  #nav a:hover{
-    background-color: rgb(245, 220, 236);
-  }
-  
-  
-  li {
-    display: inline;
-    padding: 20px;
-  }
-  
-  .parent {
-    display: flex;
-    height: 100%;
-    font-family: "Courier New", Courier;
-  }
-  
-  .left {
-    width: 30%;
-    padding: 5em;
-    min-height: 300px;
-    align-items: center;
-  }
-  
-  
-  .right {
-    width: 50%;
-    color: #222;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  
-  
-  
+}
+
+.nav a {
+  display: inline-block;
+  color: aliceblue;
+  font-size: 150%;
+  text-align: center;
+  padding: 12px;
+  width: 15%;
+ 
+
+}
+
+img {
+  float: left;
+  height: 400px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.contact{
+  text-align: center;
+
+}
+
+.contact a{
+  display: inline-block;
+  color: aliceblue;
+  font-size: 120%;
+  text-align: center;
+  padding: 12px;
+  width: 15%;
+
+}
