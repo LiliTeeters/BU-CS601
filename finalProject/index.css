@@ -3,20 +3,14 @@
 }*/
 
 body {
-  background: linear-gradient(301.28deg, #630000 0%, #000000 100%), linear-gradient(121.28deg, #207A00 0%, #950000 100%), linear-gradient(238.72deg, #FFB800 0%, #000000 100%), linear-gradient(238.72deg, #00D1FF 0%, #A80000 100%), linear-gradient(58.72deg, #B80000 0%, #1B00C2 100%), linear-gradient(125.95deg, #00E0FF 10.95%, #87009D 100%), linear-gradient(263.7deg, #B60000 3.43%, #B100A0 96.57%), linear-gradient(320.54deg, #800000 0%, #00C2FF 72.37%), linear-gradient(130.22deg, #8FA600 18.02%, #5A31FF 100%);
-background-blend-mode: overlay, color-dodge, difference, lighten, difference, color-dodge, difference, difference, normal;
-  
-  
+  background: linear-gradient( #fc766aff, #783937ff, #f1ac88ff);
   opacity: 0;
-
-  transition: opacity 5s;
-
-  
+  transition: opacity 4s;
 }
 
 h1 {
   font-family: fantasy;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   font-size: 250%;
   text-shadow: 2px 2px 7px rgb(73, 71, 71);
   justify-content: center;
@@ -26,12 +20,12 @@ h1 {
 p {
   font-size: 130%;
   font-weight: bold;
-  color: rgb(202, 216, 228);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
 a {
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   font-size: 110%;
   text-decoration: none;
   text-align: center;
@@ -44,21 +38,20 @@ a:hover {
 }
 
 .nav {
-  background-color: #000000;
+  background-color: #f1ac88ff;
   padding: 5px;
   margin: 50px;
   font-family: "Courier New", Courier;
-  box-shadow: inset 0 0 10px #9b9a9a;
+  box-shadow: inset 0 0 10px #eca9f5;
   text-align: center;
-  overflow: auto;
+ 
   
 }
 
 .nav a {
   display: inline-block;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   font-size: 150%;
-  text-align: center;
   padding: 12px;
   width: 15%;
  
@@ -70,6 +63,8 @@ img {
   height: 400px;
   width: auto;
   margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 100px;
 }
 
 .contact{
@@ -79,10 +74,39 @@ img {
 
 .contact a{
   display: inline-block;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
   font-size: 120%;
   text-align: center;
   padding: 12px;
   width: 15%;
+
+}
+
+fieldset {
+  width: 40%;
+  transition: +0s;
+  color: black;
+ 
+}
+
+input{
+  font-size: larger;
+}
+
+.hobbies{
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  padding: 12px;
+  width: 15%;
+  text-align: center;
+  justify-content: center;
+}
+
+#activities:hover{
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  
 
 }
