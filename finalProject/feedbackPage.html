@@ -22,7 +22,7 @@
         <form name ="firstForm" action="https://bucs601.com/submit.php" method="post"   novalidate onsubmit="return validateForm()">
             
             <fieldset>
-                <legend>Required Information</legend> <br>
+                <legend>Your Information</legend> <br>
                 
                  Your First Name:
                     <input type="text" name="firstName" id="firstName"  required>
@@ -32,27 +32,33 @@
                     <input type="text" name="lastName" id="lastName" required>
                     <br><br>
 
-                 Your Facilitator's Name:
-                    <input type="text" name="facilitator" id="facilitator" required>
                     <br><br>
             </fieldset>
 
             <br><br>
 
             <fieldset>
-                <legend>Optional</legend>
+                <legend>Website Feedback</legend>
                 <br>
-                    Are you liking the page so far?
+                    Did you enjoy the website?
                     <input type="radio" name="yes/no" value="question" checked>Yes 
             
                     <input type="radio" name="yes/no" value="question" checked>No 
                     <br><br><br>
           
-                    Check all that apply: What is the best way to reach you?
+                    Which page(s) did you like the most?
                     <br>
-                    <input type="checkbox" name="contact1" value="E-mail">E-mail <br/>
-                    <input type="checkbox" name="contact2"  value="textmsg">Text Message <br/>
-                    <input type="checkbox" name="contact3" value="phone">Phone Call <br/>
+                    <input type="checkbox" name="contact1" value="E-mail">Home <br/>
+                    <input type="checkbox" name="contact2"  value="textmsg">About <br/>
+                    <input type="checkbox" name="contact3" value="phone"> Play <br/>
+                    <input type="checkbox" name="contact3" value="phone"> Work <br/>
+                    <br><br><br>
+
+                    What I can improve on?
+                    <br>
+                    <textarea rows="5" cols="50" name="taComments" gt></textarea>
+                    <br><br><br>
+                    <input type="submit" name="submitButton" value="Submit">
                     <br>
             </fieldset>
 

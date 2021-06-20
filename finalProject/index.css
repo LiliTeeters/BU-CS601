@@ -17,6 +17,10 @@ h1 {
   text-align: center;
 }
 
+h2{
+  font-family: "Courier New", Courier;
+
+}
 p {
   font-size: 130%;
   font-weight: bold;
@@ -94,13 +98,13 @@ input{
 }
 
 .hobbies{
-  display: inline-block;
   color: rgb(0, 0, 0);
   font-size: 150%;
   padding: 12px;
   width: 15%;
   text-align: center;
   justify-content: center;
+  align-content: center;
 }
 
 #activities:hover{
